@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Fight.ogg-cd10b808c5e30394556af50be67f3e14.oggstr"
+
+[deps]
+
+source_file="res://resources/audio/Fight.ogg"
+dest_files=[ "res://.import/Fight.ogg-cd10b808c5e30394556af50be67f3e14.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

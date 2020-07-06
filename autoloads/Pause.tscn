@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://autoloads/Pause.gd" type="Script" id=1]
+[ext_resource path="res://resources/images/black_texture.png" type="Texture" id=2]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+pause_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_vertical_guides_": [ 319.963 ]
+}
+
+[node name="Background" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0.501961 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -34.5
+margin_top = -10.0
+margin_right = 34.5
+margin_bottom = 10.0
+text = "Continue"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fullscreen" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -39.0187
+margin_top = -47.4224
+margin_right = 38.9813
+margin_bottom = -27.4224
+text = "Fullscreen"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Fullscreen" to="." method="_on_Fullscreen_pressed"]
